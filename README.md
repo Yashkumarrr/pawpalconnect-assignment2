@@ -28,7 +28,18 @@ kubectl apply -f service.yml
 kubectl apply -f configmap.yml
 kubectl apply -f deployment.yml
 kubectl apply -f secret.yml
+```
 
+
+In addition to manually deploying the application, this project can also be automated using Jenkins.
+
+Jenkins can clone the repository, build the Docker image, push it to a container registry, and apply the Kubernetes manifests automatically.
+
+This ensures repeatable, zero-downtime deployments without manual intervention.
+
+The pipeline uses stages for checkout and deployment, and can also use environment variables or credentials for secure configuration.
+
+This shows how the project supports both manual and automated deployment workflows, demonstrating real-world DevOps practices.
 
 ##images
 
