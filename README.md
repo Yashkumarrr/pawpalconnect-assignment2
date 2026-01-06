@@ -24,6 +24,13 @@ docker build -t assess .
 docker run -p 3000:3000 assess
 docker tag assess yashkashyapp/assess:assessment
 docker push yashkashyapp/assess:assessment
+kubectl apply -f service.yml
+kubectl apply -f configmap.yml
+kubectl apply -f deployment.yml
+kubectl apply -f secret.yml
+
+
+##images
 
 <img width="1920" height="875" alt="Screenshot 2026-01-06 144742" src="https://github.com/user-attachments/assets/f30167ac-ae46-4695-b3c4-7db3204af648" />
 
